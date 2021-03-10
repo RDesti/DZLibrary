@@ -1,0 +1,13 @@
+C:\Users\tatot\source\repos\DZLibrary\DZLibrary\obj\Debug\netcoreapp3.1\DZLibrary.csprojAssemblyReference.cache
+C:\Users\tatot\source\repos\DZLibrary\DZLibrary\obj\Debug\netcoreapp3.1\DZLibrary.AssemblyInfoInputs.cache
+C:\Users\tatot\source\repos\DZLibrary\DZLibrary\obj\Debug\netcoreapp3.1\DZLibrary.AssemblyInfo.cs
+C:\Users\tatot\source\repos\DZLibrary\DZLibrary\obj\Debug\netcoreapp3.1\DZLibrary.csproj.CoreCompileInputs.cache
+C:\Users\tatot\source\repos\DZLibrary\DZLibrary\bin\Debug\netcoreapp3.1\DZLibrary.exe
+C:\Users\tatot\source\repos\DZLibrary\DZLibrary\bin\Debug\netcoreapp3.1\DZLibrary.deps.json
+C:\Users\tatot\source\repos\DZLibrary\DZLibrary\bin\Debug\netcoreapp3.1\DZLibrary.runtimeconfig.json
+C:\Users\tatot\source\repos\DZLibrary\DZLibrary\bin\Debug\netcoreapp3.1\DZLibrary.runtimeconfig.dev.json
+C:\Users\tatot\source\repos\DZLibrary\DZLibrary\bin\Debug\netcoreapp3.1\DZLibrary.dll
+C:\Users\tatot\source\repos\DZLibrary\DZLibrary\bin\Debug\netcoreapp3.1\DZLibrary.pdb
+C:\Users\tatot\source\repos\DZLibrary\DZLibrary\obj\Debug\netcoreapp3.1\DZLibrary.dll
+C:\Users\tatot\source\repos\DZLibrary\DZLibrary\obj\Debug\netcoreapp3.1\DZLibrary.pdb
+C:\Users\tatot\source\repos\DZLibrary\DZLibrary\obj\Debug\netcoreapp3.1\DZLibrary.genruntimeconfig.cache

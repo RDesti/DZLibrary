@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\tatot\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\tatot\\.nuget\\packages"
+    ]
+  }
+}
