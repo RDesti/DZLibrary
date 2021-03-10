@@ -145,6 +145,7 @@ namespace DZLibrary
         {
             int remainder;
             int c;
+            int count = 0;
             for (int i = 1; i <= number; i++)
             {
                 int SumOdds = 0;
@@ -152,9 +153,7 @@ namespace DZLibrary
                 c = i;
                 while (c != 0)
                 {
-
                     remainder = c % 10;
-
                     if (remainder % 2 == 0)
                     {
                         SumEvens += remainder;
@@ -167,13 +166,42 @@ namespace DZLibrary
                 }
                 if (SumEvens > SumOdds)
                 {
-                    return i;
-                }
-                else
-                {
-                    return null;
+                    ++count;
                 }
             }
+            return count;
+        }
+        public static string HaveInNumbersIdenticalDigits(int number1, int number2)
+        {
+            string result = "";
+            int b;
+            int c;
+            int i = 0;
+            do
+            {
+                b = number1 % 10;
+                do
+                {
+                    c = number2 % 10;
+                    if (b == c)
+                    {
+                        i++;
+                    }
+                    number2 /= 10;
+                }
+                while (number2 != 0);
+            }
+            while (number1 != 0 && b == c);
+            number1 /= 10;
+            if (i > 0)
+            {
+                result = "YES";
+            }
+            else
+            {
+                result = "NO";
+            }
+            return result;
         }
     }
 }
