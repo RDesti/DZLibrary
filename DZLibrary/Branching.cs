@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DZLibrary
 {
-    class Branching
+    public static class Branching
     {
         public static double GetSumOrMultiplyOrMinus(double a, double b)
         {

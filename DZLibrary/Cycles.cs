@@ -4,20 +4,20 @@ using System.Text;
 
 namespace DZLibrary
 {
-    class Cycles
+    public static class Cycles
     {
-        public static int GetExponentiation(int a, int b)
+        public static double GetExponentiation(double a, double b)
         {
-            int c = 1;
-            for (int i = 0; i < b; i++)
+            double c = 1;
+            for (double i = 0; i < b; i++)
             {
                 c *= a;
             }
             return c;
         }
-        public static void PrintNumbersThatMultiples(int a)
+        public static void PrintNumbersThatMultiples(int number)
         {
-            for (int i = 0; i <= 1000; i += a)
+            for (int i = 0; i <= 1000; i += number)
             {
                 Console.WriteLine(i);
             }

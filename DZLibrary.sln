@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZLibrary", "DZLibrary\DZLibrary.csproj", "{2C32286C-EB20-49C3-8654-A589239A9044}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DZLibrary", "DZLibrary\DZLibrary.csproj", "{2C32286C-EB20-49C3-8654-A589239A9044}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZLibrary.Tests", "DSLibrary.Tests\DZLibrary.Tests.csproj", "{5E40C04C-28D5-4E70-A187-67CD90944249}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{2C32286C-EB20-49C3-8654-A589239A9044}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C32286C-EB20-49C3-8654-A589239A9044}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C32286C-EB20-49C3-8654-A589239A9044}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E40C04C-28D5-4E70-A187-67CD90944249}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E40C04C-28D5-4E70-A187-67CD90944249}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E40C04C-28D5-4E70-A187-67CD90944249}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E40C04C-28D5-4E70-A187-67CD90944249}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

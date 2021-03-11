@@ -55,6 +55,7 @@ namespace DZLibrary
             double a;
             double b;
             double c;
+            int number;
             switch (numberTask)
             {
                 case 1:
@@ -110,7 +111,7 @@ namespace DZLibrary
                     a = Convert.ToDouble(Console.ReadLine());
                     Console.WriteLine($"введите значение b:");
                     b = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine($"Ваш результат {Variables.GetResultOfDivision(a, b)}");
+                    Console.WriteLine($"Ваш результат {Variables.GetResultOfEquation(a, b)}");
                     break;
                 case 12:
                     Console.WriteLine($"введите значение а:");
@@ -186,14 +187,20 @@ namespace DZLibrary
                     break;
                 case 20:
                     Console.WriteLine($"введите число:");
-                    int number = Convert.ToInt32(Console.ReadLine());
+                    number = Convert.ToInt32(Console.ReadLine());
                     Console.WriteLine($"{Branching.PrintInLettersNumber(number)}");
                     break;
                 case 21:
-                    Console.WriteLine($" + {numberTask}");
+                    Console.WriteLine($"введите значение а:");
+                    a = Convert.ToDouble(Console.ReadLine());
+                    Console.WriteLine($"введите значение b:");
+                    b = Convert.ToDouble(Console.ReadLine());
+                    Console.WriteLine($"{Cycles.GetExponentiation(a, b)}");
                     break;
                 case 22:
-                    Console.WriteLine($" + {numberTask}");
+                    Console.WriteLine($"введите значение а:");
+                    number = Convert.ToInt32(Console.ReadLine());
+                    Cycles.PrintNumbersThatMultiples(number);
                     break;
                 case 23:
                     Console.WriteLine($" + {numberTask}");

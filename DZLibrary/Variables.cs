@@ -4,9 +4,9 @@ using System.Text;
 
 namespace DZLibrary
 {
-    class Variables
+    public static class Variables
     {
-        public static double GetResultOfDivision(double a, double b)
+        public static double GetResultOfEquation(double a, double b)
         {
             if (a == b)
             {
