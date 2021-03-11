@@ -43,7 +43,7 @@ namespace DZLibrary
             {
                 if (y > 0)
                 {
-                    result = "точка в второй четверти";
+                    result = "точка во второй четверти";
                 }
                 else
                 {
@@ -127,28 +127,28 @@ namespace DZLibrary
             switch (division)
             {
                 case 2:
-                    result = "двадцать ";
+                    result = "двадцать";
                     break;
                 case 3:
-                    result = "тридцать ";
+                    result = "тридцать";
                     break;
                 case 4:
-                    result = "сорок ";
+                    result = "сорок";
                     break;
                 case 5:
-                    result = "пятьдесят ";
+                    result = "пятьдесят";
                     break;
                 case 6:
-                    result = "шестьдесят ";
+                    result = "шестьдесят";
                     break;
                 case 7:
-                    result = "семьдесят ";
+                    result = "семьдесят";
                     break;
                 case 8:
-                    result = "восемьдесят ";
+                    result = "восемьдесят";
                     break;
                 case 9:
-                    result = "девяносто ";
+                    result = "девяносто";
                     break;
             }
             switch (remainder)
@@ -156,7 +156,7 @@ namespace DZLibrary
                 case 1:
                     if (division >= 2 && division <= 9)
                     {
-                        result += "один";
+                        result += " один";
                     }
                     else
                     {
@@ -166,7 +166,7 @@ namespace DZLibrary
                 case 2:
                     if (division >= 2 && division <= 9)
                     {
-                        result += "два";
+                        result += " два";
                     }
                     else
                     {
@@ -174,12 +174,12 @@ namespace DZLibrary
                     }
                     break;
                 case 3:
-                    result += "три";
+                    result += " три";
                     break;
                 case 4:
                     if (division >= 2 && division <= 9)
                     {
-                        result += "четыре";
+                        result += " четыре";
                     }
                     else
                     {
@@ -187,19 +187,19 @@ namespace DZLibrary
                     }
                     break;
                 case 5:
-                    result += "пять";
+                    result += " пять";
                     break;
                 case 6:
-                    result += "шесть";
+                    result += " шесть";
                     break;
                 case 7:
-                    result += "семь";
+                    result += " семь";
                     break;
                 case 8:
-                    result += "восемь";
+                    result += " восемь";
                     break;
                 case 9:
-                    result += "девять";
+                    result += " девять";
                     break;
             }
             switch (division)
