@@ -200,7 +200,7 @@ namespace DZLibrary
                 case 22:
                     Console.WriteLine($"введите значение а:");
                     number = Convert.ToInt32(Console.ReadLine());
-                    Cycles.PrintNumbersThatMultiples(number);
+                    Cycles.GetNumbersThatMultiples (number);
                     break;
                 case 23:
                     Console.WriteLine($" + {numberTask}");

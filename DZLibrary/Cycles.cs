@@ -15,12 +15,16 @@ namespace DZLibrary
             }
             return c;
         }
-        public static void PrintNumbersThatMultiples(int number)
+        public static int[] GetNumbersThatMultiples(int number)
         {
+            int size = (1000 / number) + 1;
+            int[] array = new int[size];
+            int j = 0;
             for (int i = 0; i <= 1000; i += number)
             {
-                Console.WriteLine(i);
+                array[j++] = i;
             }
+            return array;
         }
         public static int CountSquareNumberIsLessThanGivenNum(int a)
         {
