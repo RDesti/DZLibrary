@@ -239,8 +239,9 @@ namespace DZLibrary
                     break;
                 case 32:
                     Console.WriteLine($"введите длину массива:");
-                    a = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine($"Минимальным элементом этого массива является");
+                    int number1 = Convert.ToInt32(Console.ReadLine());
+                    int number2 = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine($"{Cycles.HaveInNumbersIdenticalDigits(number1, number2)}");
                     break;
                 case 33:
                     Console.WriteLine($"введите длину массива:");

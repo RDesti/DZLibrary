@@ -145,19 +145,18 @@ namespace DZLibrary
             revers /= 10;
             return revers;
         }
-        public static int GetSumEvenIsGreaterSumOdd(int number)
+        public static int [] GetValueSumEvenIsGreaterSumOdd(int number)
         {
             int remainder;
-            int c;
             int count = 0;
             for (int i = 1; i <= number; i++)
             {
                 int SumOdds = 0;
                 int SumEvens = 0;
-                c = i;
-                while (c != 0)
+                int tempI = i;
+                while (tempI != 0)
                 {
-                    remainder = c % 10;
+                    remainder = tempI % 10;
                     if (remainder % 2 == 0)
                     {
                         SumEvens += remainder;
@@ -166,37 +165,64 @@ namespace DZLibrary
                     {
                         SumOdds += remainder;
                     }
-                    c /= 10;
+                    tempI /= 10;
                 }
                 if (SumEvens > SumOdds)
                 {
                     ++count;
                 }
             }
-            return count;
+            int[] value = new int[count];
+            int j = 0;
+            for (int i = 1; i <= number; i++)
+            {
+                int SumOdds = 0;
+                int SumEvens = 0;
+                int tempI = i;
+                while (tempI != 0)
+                {
+                    remainder = tempI % 10;
+                    if (remainder % 2 == 0)
+                    {
+                        SumEvens += remainder;
+                    }
+                    else
+                    {
+                        SumOdds += remainder;
+                    }
+                    tempI /= 10;
+                }
+                if (SumEvens > SumOdds)
+                {
+                    value[j] = i;
+                    j++;
+                }
+            }
+            return value;
         }
         public static string HaveInNumbersIdenticalDigits(int number1, int number2)
         {
-            string result = "";
+            string result = string.Empty;
             int b;
             int c;
             int i = 0;
             do
             {
+                int tempNumber2 = number2;
                 b = number1 % 10;
                 do
                 {
-                    c = number2 % 10;
+                    c = tempNumber2 % 10;
                     if (b == c)
                     {
                         i++;
                     }
-                    number2 /= 10;
+                    tempNumber2 /= 10;
                 }
-                while (number2 != 0);
+                while (tempNumber2 != 0);
+                number1 /= 10;
             }
-            while (number1 != 0 && b == c);
-            number1 /= 10;
+            while (number1 != 0 || b == c);
             if (i > 0)
             {
                 result = "YES";

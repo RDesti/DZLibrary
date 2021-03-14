@@ -78,8 +78,7 @@ namespace DZLibrary.Tests
             Assert.AreEqual(expected, actual);
         }
         [TestCase(27, 3)]
-        [TestCase(157464, 54)]
-        [TestCase(9, 1)]
+        [TestCase(1, 1)]
         [TestCase(125, 5)]
         [TestCase(64, 4)]
         public void FindNumberByBinarySearch_WhenNumberPassed_ShouldResult(int number, int expected)
@@ -87,14 +86,43 @@ namespace DZLibrary.Tests
             int actual = Cycles.FindNumberByBinarySearch(number);
             Assert.AreEqual(expected, actual);
         }
-        [TestCase(27, 3)]
-        [TestCase(54, 157464)]
+        [TestCase(222227, 1)]
+        [TestCase(157464, 3)]
         [TestCase(9, 1)]
-        [TestCase(1, 0)]
-        [TestCase(64, 4)]
+        [TestCase(0, 0)]
+        [TestCase(22224864, 0)]
         public void CountNumberOddDigits_WhenNumberPassed_ShouldResult(int number, int expected)
         {
             int actual = Cycles.CountNumberOddDigits(number);
+            Assert.AreEqual(expected, actual);
+        }
+        [TestCase(222227, 722222)]
+        [TestCase(157464, 464751)]
+        [TestCase(9, 9)]
+        [TestCase(0, 0)]
+        [TestCase(12345678, 87654321)]
+        public void GetReverstNumber_WhenNumberPassed_ShouldResult(int number, int expected)
+        {
+            int actual = Cycles.GetReverstNumber (number);
+            Assert.AreEqual(expected, actual);
+        }
+        [TestCase(80, new int[] { 2, 4, 6, 8, 12, 14, 16, 18, 20, 21, 22, 24, 26, 28, 34, 36, 38, 40, 41, 42, 43, 44, 46, 48, 56, 58, 60, 61, 62, 63, 64, 65, 66, 68, 78, 80 })]
+        [TestCase(33, new int[] { 2,4,6,8,12,14,16,18,20,21,22,24,26,28 })]
+        [TestCase(9, new int[] { 2,4,6,8 })]
+        [TestCase(1, new int[] { })]
+        public void GetValueSumEvenIsGreaterSumOdd_WhenNumberPassed_ShouldResult(int number, int[] expected)
+        {
+            int[] actual = Cycles.GetValueSumEvenIsGreaterSumOdd(number);
+            Assert.AreEqual(expected, actual);
+        }
+        [TestCase( 222227, 722222, "YES")]
+        [TestCase( 146, 751, "YES")]
+        [TestCase( 9, 1, "NO")]
+        [TestCase( 1000, 124578, "YES")]
+        [TestCase( 1234, 8765555, "NO")]
+        public void HaveInNumbersIdenticalDigits_WhenTwoNumberPassed_ShouldResult(int number1, int number2, string expected)
+        {
+            string actual = Cycles.HaveInNumbersIdenticalDigits(number1, number2);
             Assert.AreEqual(expected, actual);
         }
     }
