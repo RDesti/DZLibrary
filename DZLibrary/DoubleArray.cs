@@ -8,7 +8,7 @@ namespace DZLibrary
     {
         public static int[,] CreateAndFill(int a, int b)
         {
-            int[,] array = new int[ a, b];
+            int[,] array = new int[a, b];
             Random random = new Random();
             for (int i = 0; i < array.GetLength(0); i++)
             {
@@ -22,7 +22,7 @@ namespace DZLibrary
         public static int FindMinElement(int[,] array)
         {
             int min = array[0, 0];
-            for (int i = 1; i < array.Length; i++)
+            for (int i = 0; i < array.GetLength(0); i++)
             {
                 for (int j = 0; j < array.GetLength(1); j++)
                 {
@@ -37,7 +37,7 @@ namespace DZLibrary
         public static int FindMaxElement(int[,] array)
         {
             int max = array[0, 0];
-            for (int i = 1; i < array.Length; i++)
+            for (int i = 0; i < array.GetLength(0); i++)
             {
                 for (int j = 0; j < array.GetLength(1); j++)
                 {
@@ -53,7 +53,7 @@ namespace DZLibrary
         {
             int min = array[0, 0];
             int[] minIndex = new int[2];
-            for (int i = 1; i < array.Length; i++)
+            for (int i = 0; i < array.GetLength(0); i++)
             {
                 for (int j = 0; j < array.GetLength(1); j++)
                 {
@@ -71,7 +71,7 @@ namespace DZLibrary
         {
             int max = array[0, 0];
             int[] maxIndex = new int[2];
-            for (int i = 1; i < array.Length; i++)
+            for (int i = 0; i < array.GetLength(0); i++)
             {
                 for (int j = 0; j < array.GetLength(1); j++)
                 {
