@@ -105,12 +105,14 @@ namespace DZLibrary
         }
         public static int[] GetSwapedHalves(int[] array)
         {
+            bool isEvenLength = array.Length%2==0;
             int halvesLength = array.Length / 2;
+            int k = (isEvenLength) ? 0 : 1;
             for(int j = 0; j < halvesLength; j++)
             {
                 int temp = array[j];
-                array[j] = array[halvesLength + j];
-                array[halvesLength + j] = temp;
+                array[j] = array[halvesLength + j + k];
+                array[halvesLength + j + k] = temp;
             }
             return array;
         }

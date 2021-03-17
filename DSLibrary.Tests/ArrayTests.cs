@@ -104,5 +104,29 @@ namespace DZLibrary.Tests
             int[] actual = Array.GetReversArray(arr);
             Assert.AreEqual(expected, actual);
         }
+        [TestCase(1, 5)]
+        [TestCase(2, 1)]
+        [TestCase(3, 2)]
+        [TestCase(4, 2)]
+        [TestCase(5, 1)]
+
+        public void GetCountOfOddElements_WhenArrayPassed_ShouldResult(int mockNumber, int expected)
+        {
+            int[] arr = ArrayTests.GetArrayMock(mockNumber);
+            int actual = Array.GetCountOfOddElements (arr);
+            Assert.AreEqual(expected, actual);
+        }
+        [TestCase(1, new int[] { 168, 652, 121, 327, 934, 295, 966, 744, 377, 984, 1000, 78, 876, 77, })]
+        [TestCase(2, new int[] { 639, 650, 554, 936, 606 })]
+        [TestCase(3, new int[] { 331, 782, 392, 650, 368, 802, 317, 962 })]
+        [TestCase(4, new int[] { 72, 69, 89 })]
+        [TestCase(5, new int[] { 513 })]
+
+        public void GetSwapedHalves_WhenArrayPassed_ShouldResult(int mockNumber, int[] expected)
+        {
+            int[] arr = ArrayTests.GetArrayMock(mockNumber);
+            int[] actual = Array.GetSwapedHalves(arr);
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
