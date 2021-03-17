@@ -91,10 +91,28 @@ namespace DZLibrary
             }
             return array;
         }
-        public static int GetNumberOfOddElements(int [] array)
+        public static int GetCountOfOddElements(int [] array)
         {
-            int numbers = 0;
-            return numbers;
+            int count = 0;
+            for (int j = 0; j < array.Length; j++)
+            {
+                if (array[j] % 2 != 0)
+                {
+                    count ++;
+                }
+            }
+            return count;
+        }
+        public static int[] GetSwapedHalves(int[] array)
+        {
+            int halvesLength = array.Length / 2;
+            for(int j = 0; j < halvesLength; j++)
+            {
+                int temp = array[j];
+                array[j] = array[halvesLength + j];
+                array[halvesLength + j] = temp;
+            }
+            return array;
         }
     }
 }
